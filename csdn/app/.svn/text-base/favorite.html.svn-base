@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSDN</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../res/new-base.css">
+    <link rel="stylesheet" href="../res/new-theme-ios.css">
+	<link rel="stylesheet" href="../res/common.css">
+	<style>
+    	html{
+    		overflow: hidden;
+    	}
+    </style>
+</head>
+<body>
+	<header class="columcount">
+		<div class="left"><a id="left_back"><span class="icon back"></span></a></div>
+		<div class="center title">我的收藏</div>
+		<div class="right"></div>
+	</header>
+	<div id="wrapper" class="search">
+		<div id="container" class="container"></div>
+	 </div>
+	 <div class="ybg"></div>
+</body>
+<script type="text/javascript" src="../js/csdn.js"></script>
+<script type="text/javascript" src="../js/script/ajax.js"></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/script/string.js"></script>
+<script type="text/javascript" src="../js/script/date.js"></script>
+<script type="text/javascript" src="../js/csdn/basepage.js"></script>
+<script type="text/javascript" src="../js/csdn/script/app-favorite-page.js"></script>
+</html>

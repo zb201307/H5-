@@ -1,0 +1,118 @@
+#installing{
+position:absolute; top:35%; margin:auto; width:100%;
+opacity: 0.9;
+}
+#installing .installcontent{
+	font-size:1em;
+	font-weight: bold;
+	text-align:center;
+	line-height: 1.5em;
+}
+#installing>div{
+	margin:auto; width:70%; background-color:#fff;
+	border-radius: 5px;
+	color:#333333;
+	box-shadow: 0px 0px 10px 1px #666;
+	-webkit-box-shadow: 0px 0px 10px 1px #666;
+}
+#installing p{
+margin: 0;
+}
+#installing .description{
+	padding: 0 15px;
+}
+#installing .installcontent{
+	padding: 0 15px 15px;
+}
+#installing .installloading.iosinstalling{
+	background-size: 16px 16px;
+}
+#installing .installloading{
+	
+	background: url(../app/img/loading-gif.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	width:100%;
+	height:32px;
+	padding: 8px 0 8px 0;
+}
+#installing .installbottom{height:40px; padding-top:10px;}
+#installing .first{width:50%;float:left;}
+#installing .second{width:50%;float:right;}
+#installing button{width:84%;height:40px;border-radius: 5px; margin:0 8%;}
+#installing .first button{float:right;}
+#installing .second button{float:left;}
+
+/* -------------------------- NOTIFICATION --------------------------*/
+.notification {
+	color:#fff;
+}
+.notification .window.growl {
+	background:rgba(0,0,0,0.8);
+}
+.notification .window:not(.growl) {
+	background:#ffffff;
+	color:#222;
+	-webkit-box-shadow:0 0 8px #000;
+	-moz-box-shadow:0 0 8px #000;
+	box-shadow:0 0 8px #000;
+	-webkit-border-radius:4px !important;
+	-moz-border-radius:4px !important;
+	border-radius:4px !important;
+}
+.notification .window:not(.growl) button,.notification .window:not(.growl) .button {
+	background:#fff !important;
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	box-shadow:none !important;
+	color:#000 !important;
+	border:none !important;
+	margin-bottom:1px;
+	width:50%;
+	background:#ebebeb !important;
+	font-size:1.2em;
+}
+.notification .window:not(.growl) button .accept,.notification .window:not(.growl) a.accept {
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+	border-radius:0px !important;
+	
+	-webkit-border-bottom-left-radius:4px !important;
+	-moz-border-bottom-left-radius:4px !important;
+	border-bottom-left-radius:4px !important;
+	
+	border-top:1px solid #d3d3d3 !important;
+	border-right:1px solid #d3d3d3 !important;
+	height:45px;
+	line-height:45px;
+}
+.notification .window:not(.growl) button .cancel, .notification .window:not(.growl) a.cancel {
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+	border-radius:0px !important;
+	
+	-webkit-border-bottom-right-radius:4px !important;
+	-moz-border-bottom-right-radius:4px !important;
+	border-bottom-right-radius:4px !important;
+	border-top:1px solid #d3d3d3 !important;
+	height:45px;
+	line-height:45px;
+}
+/*����Ķ���Ч��*/
+.notification{position:fixed;width:100%;z-index:10000;display:none;height: auto;top: auto;bottom: 50px;}
+.notification > div{margin: auto;padding: 10px;left: auto;top: auto;}
+.notification .window{position:relative;opacity:0;-webkit-transition:all 350ms;-moz-transition:all 350ms;transition:all 350ms;text-align:center;}
+.notification .window.show{opacity:1;-webkit-transition-delay:350ms;-moz-transition-delay:350ms;transition-delay:350ms}
+.notification .window strong,.notification .window small{display:block}
+.notification .window.growl{left:50%;top:50%;width:204px;margin:-52px auto auto -52px;padding:24px 8px;-webkit-transform:scale(.2);-moz-transform:scale(.2);transform:scale(.2);}
+.notification .window.growl.show{-webkit-transform:scale(1);-moz-transform:scale(1);transform:scale(1);margin: auto;padding: 10px;left: auto;top: auto;}
+.notification .window.growl > .icon{font-size:3.6em;line-height:1em;}
+.notification .window.growl > .icon ~ strong{margin-bottom:-12px}
+.notification .window.growl small{display:none}
+.notification .window:not(.growl){width:280px;left:0;top:20%;margin:22px auto 0;-webkit-transform:translateY(100%);-moz-transform:translateY(100%);transform:translateY(100%);}
+.notification .window:not(.growl).show{-webkit-transform:translateY(0%);-moz-transform:translateY(0%);transform:translateY(0%)}
+.notification .window:not(.growl):not(.html){padding-top:24px;}
+.notification .window:not(.growl):not(.html) > .icon{font-size:4em;line-height:1em}
+.notification .window:not(.growl):not(.html) > strong{font-size:1.2em}
+.notification .window:not(.growl):not(.html) > strong,.notification .window:not(.growl):not(.html) small{padding:0 16px 16px 16px}
+.notification .window:not(.growl).html .close{position:absolute;top:-14px;right:-14px;font-size:14px;line-height:24px;font-weight:normal;width:24px;height:24px;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px}

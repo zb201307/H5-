@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="res/new-base.css">
+    <link rel="stylesheet" href="res/new-theme-ios.css">
+    <style>
+    
+    	html{
+    		overflow: hidden;
+    		cursor: pointer;/*解决ios无法触发click事件的bug*/
+    	}
+    </style>
+</head>
+<body style="background:#333333;">
+    <section>
+        <article class="menu show" style="width:70%;">
+            <div>
+				<span id="searcharticle"><span class="icon search0"></span></span>
+				<div id="searcharticle" class="field-div">&nbsp;&nbsp;&nbsp;搜索资讯</div>
+			</div>
+			
+            <ul id="menu-ul">
+                <li class="clicked"><a num="1" id="news"><span class="icon book0"></span>最新资讯</a></li>
+                <li><a num="2" id="industry"><span class="icon earth"></span>业界</a></li>
+                <li><a num="3" id="cloud"><span class="icon cloud"></span>云计算</a></li>
+                <li><a num="4" id="mobile"><span class="icon mobile"></span>移动开发</a></li>
+                <li><a num="5" id="sd"><span class="icon sd"></span>软件研发</a></li>
+                <li class="anchor"></li>
+                <li><a id="favorite"><span class="icon favorite"></span>我的收藏</a></li>
+                <li><a id="settings"><span class="icon setting"></span>设置</a></li>
+            </ul>
+        </article>
+    </section>
+	<script type="text/javascript" src="js/csdn.js"></script>
+	<script type="text/javascript" src="js/csdn/basepage.js" ></script>
+	<script type="text/javascript" src="js/csdn/script/index-menu-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSDN</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../res/new-base.css">
+	<link rel="stylesheet" href="../res/new-theme-android.css">
+	<link rel="stylesheet" href="../res/common.css">
+	<style>
+		html{overflow-x: hidden;}
+		#share{
+			margin: 15px 6%;
+			padding-left: 4px;
+			/*box-shadow: 2px 2px 2px 0px #666666;*/
+			background: transparent;
+			display: inline-block;
+			border-radius: 1em;
+			width: 88%;
+		}
+		#share>div{
+			border: 1px solid #C1C1C1;
+			background-color: #fff;
+			background-image: -webkit-gradient(linear, left top, left bottom, from( #F4F4F6), to( #FFFFFF));
+			background-image: -webkit-linear-gradient( #F4F4F6 , #FFFFFF);
+			background-image: linear-gradient( #F4F4F6, #FFFFFF);
+			padding: 1em;
+			font-size: 16px;
+			line-height: 1.5em;
+		}
+		#share>div:first-child{
+			border-top-left-radius: .6em;
+			border-top-right-radius: .6em;
+		}
+		#share>div:last-child{
+			border-bottom-left-radius: .6em;
+			border-bottom-right-radius: .6em;
+		}
+		#share div:active{
+			box-shadow:2px 2px 2px 0px #8B8B8C inset;
+			color:#00B0F0
+		}
+	</style>
+</head>
+<body>
+    <div class="ybg"></div>
+	<header class="columcount">
+		<div class="left">
+			<a id="left"><span class="icon back"></span></a>
+		</div>
+		<div class="center title">分享给好友</div>
+		<div class="right">
+			<!--<a id="ok"><span class="icon check"></span></a>-->
+		</div>
+	</header>
+	<div>
+		<form>
+			<textarea id="commentcontent" name="content"></textarea>
+		</form>
+	</div>
+	<div id="share">
+		<div type="weixin" scene="WXSceneSession">分享到微信好友</div>
+		<div type="weixin" scene="WXSceneTimeline" style="border-top: none; border-bottom: none">分享到微信朋友圈</div>
+		<div type="sinaweibo" style="border-bottom: none;">分享到新浪微博</div>
+		<div type="tencentweibo">分享到腾讯微博</div>
+		
+	</div>
+    <script type="text/javascript" src="../js/csdn.js"></script>
+	<script type="text/javascript" src="../js/csdn/basepage.js"></script>
+	<script type="text/javascript" src="../js/csdn/script/app-share-page.js"></script>
+</body>
+</html>

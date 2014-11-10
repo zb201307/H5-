@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSDN</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../res/new-base.css">
+    <link rel="stylesheet" href="../res/new-theme-ios.css">
+    <style>
+    	html{
+    		overflow: hidden;
+    	}
+    </style>
+</head>
+<body>
+    <section id="main">
+		<div class="ybg" ></div>
+		<header class="columcount">
+			<div class="left"><a id="left"><span class="icon back"></span></a></div>
+			<div class="center title">版本信息</div>
+			<div class="right"></div>
+		</header>
+        <article class="about">
+            <div id="version">
+                <img src="img/logo-about.png" class="logo" style="width:50%"/>
+                <p>版本号：2.6</p>
+                <div style="line-height: 1%;position: absolute;left: 0px;bottom: 8%;width: 100%;text-align: center;">
+                    <p>产品支持：数字天堂（北京）网络技术有限公司</p>
+                    <p>技术规范：HTML5+&nbsp;&nbsp;&nbsp;www.html5plus.org</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <script type="text/javascript" src="../js/csdn.js"></script>
+	<script type="text/javascript" src="../js/csdn/basepage.js"></script>
+	<script type="text/javascript" src="../js/csdn/script/app-about-page.js"></script>
+</body>
+</html>
